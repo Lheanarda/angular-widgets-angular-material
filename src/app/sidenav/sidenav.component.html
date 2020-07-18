@@ -1,0 +1,12 @@
+<mat-sidenav-container>
+  <mat-sidenav #sideNav mode = "side" [(opened)] = "opened">Sidenav</mat-sidenav>
+  <mat-sidenav-content>
+      <mat-icon (click)="onToggle()">list</mat-icon>
+      <button mat-raised-button (click)="sideNav.open()">Open</button>
+      <button mat-raised-button (click)="sideNav.close()">Close</button>
+      <button (click)="sideNav.toggle()">Toggle</button>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<!--sidenav have 3 mode : side, over, push-->

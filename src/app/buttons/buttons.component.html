@@ -1,0 +1,38 @@
+<div>
+  <button mat-button>Click Me!</button>
+  <button mat-raised-button>Click Me!</button>
+  <button mat-flat-button>Click Me!</button>
+  <button mat-stroked-button>Click Me!</button>
+</div>
+
+<div>
+  <button mat-icon-button>Icon</button>
+  <button mat-fab>+</button>
+  <button mat-mini-fab>+</button>
+</div>
+
+<div>
+  <button color="primary" mat-button>Click Me!</button>
+  <button color="accent" mat-button>Click Me!</button>
+  <button color="warn" mat-button disableRipple>Click Me!</button>
+  <button color="primary" mat-raised-button>Click Me!</button>
+  <button color="accent" mat-raised-button>Click Me!</button>
+  <button color="warn" mat-raised-button>Click Me!</button>
+</div>
+
+<div class="mat-title m-3">Toggle Button</div>
+
+<div>
+  <mat-button-toggle #toggleButton checked disableRipple disabled>Toggle</mat-button-toggle>
+  {{toggleButton.checked}}
+</div>
+
+<div>
+  <mat-button-toggle-group #toggleGroup = "matButtonToggleGroup" multiple>
+    <mat-button-toggle value ="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value = "react">React</mat-button-toggle>
+    <mat-button-toggle value = "vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>
+

@@ -1,0 +1,7 @@
+<mat-tab-group #tabref (selectedTabChange)="logChange(tabref.selectedIndex)">
+  <mat-tab label="Angular">Angular Content</mat-tab>
+  <mat-tab label="React">React Content</mat-tab>
+  <mat-tab label="Vue">Vue Content</mat-tab> 
+</mat-tab-group>
+
+{{tabref.selectedIndex}}s

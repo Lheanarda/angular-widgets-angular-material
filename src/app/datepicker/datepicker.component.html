@@ -1,0 +1,45 @@
+<p>basic</p>
+<mat-form-field>
+  <input matInput [matDatepicker]="mdate" [(ngModel)]="value">
+  <mat-datepicker-toggle [for]="mdate" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #mdate></mat-datepicker>
+</mat-form-field>
+{{value}}
+
+<br>
+
+<p>startView Year</p>
+
+<mat-form-field>
+  <input matInput [matDatepicker]="mdateyear">
+  <mat-datepicker-toggle [for]="mdateyear" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #mdateyear startView="year"></mat-datepicker>
+</mat-form-field>
+
+<p>startView Multi Year</p>
+
+<mat-form-field>
+  <input matInput [matDatepicker]="multidateyear">
+  <mat-datepicker-toggle [for]="multidateyear" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #multidateyear startView="multi-year"></mat-datepicker>
+</mat-form-field>
+
+<p>basic + min max date</p>
+<mat-form-field>
+  <input matInput [matDatepicker]="mdate2" [min]="minDate" [max]="maxDate">
+  <mat-datepicker-toggle [for]="mdate2" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #mdate2></mat-datepicker>
+</mat-form-field>
+
+
+<p>basic filter</p>
+<mat-form-field>
+  <input matInput [matDatepicker]="mdatef" [matDatepickerFilter]="dateFilter">
+  <mat-datepicker-toggle [for]="mdatef" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #mdatef></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Enter a date range</mat-label>
+</mat-form-field>
+
